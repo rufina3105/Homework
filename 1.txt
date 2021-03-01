@@ -1,0 +1,140 @@
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git config--global user.email "rufina3105@mail.ru"
+git: 'config--global' is not a git command. See 'git --help'.
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ ^C
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git config --global user.email "rufina3105@mail.ru"
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git config --global user.name "rufina3105"
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git init
+Initialized empty Git repository in D:/AD/Analitic/PYDA-19/Note/.git/
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        lection_6 my.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git remote add origin https://github.com/rufina3105/lection1.git
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git remote -v
+origin  https://github.com/rufina3105/lection1.git (fetch)
+origin  https://github.com/rufina3105/lection1.git (push)
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git add new/lection_6 my.ipynb
+fatal: pathspec 'new/lection_6' did not match any files
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git add new/lection_6_my.ipynb
+warning: LF will be replaced by CRLF in new/lection_6_my.ipynb.
+The file will have its original line endings in your working directory
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   new/lection_6_my.ipynb
+
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git commit -m "commit1"
+[master (root-commit) be5f186] commit1
+ 1 file changed, 3066 insertions(+)
+ create mode 100644 new/lection_6_my.ipynb
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git push origin master
+fatal: Код состояния ответа не указывает на успешное выполнение: 401 ().
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 46.29 KiB | 4.21 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rufina3105/lection1.git
+ * [new branch]      master -> master
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git add text.txt
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   text.txt
+
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git commit -m "commit2"
+[master 1a197fe] commit2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.txt
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 263 bytes | 263.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rufina3105/lection1.git
+   be5f186..1a197fe  master -> master
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$ ^C
+
+Lenovo@Lenovo-PC MINGW64 /d/AD/Analitic/PYDA-19/Note (master)
+$
